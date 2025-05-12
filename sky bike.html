@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>SKY BIKE</title>
+  <head>
+      <h1 class="ft">WELCOME TO SKY BIKE</h1>
+
+
+  <link rel="stylesheet" href="css bike.css">
+</head>
+
+
+  
+<body>
+  <ul class="menu">
+  <li><a href="sky bike.html">HOME</a></li>
+    <li><a href="bike.html">BIKE</a></li>
+  <li><a href="booking.html">BOOKING</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+ 
+  <li><a href="about.html">ABOUT</a></li>
+   <li class="signup"><a href="login.html">LOGIN</a></li>
+ 
+  
+ 
+</ul>
+  <video id="myVideo" autoplay muted  style="position:fixed; top:0; left:0; width:100%; height:100%; object-fit:cover;">
+  <source src="20250502_100351_0001.mp4" type="video/mp4"  class="sc1">
+  Your browser does not support the video tag.
+</video>
+
+<img id="myImage" src="SKY BIKE_20250502_095916_0000.png" class="sc1">
+
+<script>
+  var video = document.getElementById('myVideo');
+  var image = document.getElementById('myImage');
+
+  video.addEventListener('ended', function() {
+    video.style.display = 'none';
+    image.style.display = 'block';
+  });
+</script>
+
+
+  
+
+
+
+    
+
+
+</body>
+</html>

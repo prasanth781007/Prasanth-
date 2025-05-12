@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: linear-gradient(to bottom, #4a148c, #880e4f); /* Deep purple to crimson */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden; /* Hide potential scrollbars */
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('your-background-image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.6; /* Adjust opacity for desired effect */
+            z-index: -1;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: white;
+            width: 350px;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-group input {
+            width: calc(100% - 40px);
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 1em;
+            outline: none;
+        }
+
+        .input-group label {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            color: #eee;
+            pointer-events: none;
+            transition: 0.3s ease-in-out;
+        }
+
+        .input-group input:focus + label,
+        .input-group input:valid + label {
+            transform: translateY(-20px);
+            font-size: 0.8em;
+            color: #ccc;
+        }
+
+        .input-group .icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: #eee;
+            font-size: 1.2em;
+        }
+
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+
+        .remember-forgot label {
+            display: flex;
+            align-items: center;
+        }
+
+        .remember-forgot input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .remember-forgot a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .remember-forgot a:hover {
+            color: white;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: white;
+            color: #4a148c;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #eee;
+        }
+
+        .register-link {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        .register-link a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" href="css bike.css">
+
+    </head>
+<body>
+    <form action="bike.html">
+    <div class="background-overlay"></div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="input-group">
+            <input type="text" id="username" required>
+            <label for="username">Username</label>
+            <i class="fas fa-user icon"></i>
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" required>
+            <label for="password">Password</label>
+            <i class="fas fa-lock icon"></i>
+        </div>
+        <div class="remember-forgot">
+            <label>
+                <input type="checkbox" name="remember" required > Remember me
+            </label>
+            <a href="SIGN IN.html">Forgot password?</a>
+        </div>
+        <button type="submit">Login</button>
+        <p class="register-link">Don't have an account? <a href="SIGN IN.html">Register</a></p>
+    </div>
+    </form>
+</body>
+</html>
